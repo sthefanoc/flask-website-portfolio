@@ -34,7 +34,7 @@ def submit_form():
             data = request.form.to_dict()
             record_db_csv(data)
             return redirect('thank_you.html')
-        except>
+        except:
             return 'Something went terribly wrong with the database :('
     else:
         return 'um erro inesperado ocorreu'
